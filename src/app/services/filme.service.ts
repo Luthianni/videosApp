@@ -16,7 +16,7 @@ export class FilmeService {
 
   private apiURL = 'https://api.themoviedb.org/3/';
   private key = '?api_key=3dab8f30c07ae00625f1097eb17e77ec';
-  
+  apiURL: any;
 
   constructor(private http: HttpClient, public toastController: ToastController) { }
 
