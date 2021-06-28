@@ -1,4 +1,3 @@
-import { IGenero } from './../models/IGenero.model';
 import { GeneroService } from './../services/genero.service';
 import { IListaFilmes, IFilmeApi } from './../models/IFilmeAPI.model';
 import { FilmeService } from './../services/filme.service';

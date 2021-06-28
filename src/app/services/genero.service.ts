@@ -13,14 +13,15 @@ export class GeneroService {
 
   lingua= 'pt-Br';
 
-  private apiUrl = 'https://api.themoviedb.org/3/';
+  private apiURL = 'https://api.themoviedb.org/3/';
   private key = '?api_key=3dab8f30c07ae00625f1097eb17e77ec';
-  apiURL: any;
+
 
   constructor(private http: HttpClient, public toastController: ToastController) { }
 
   buscarGeneros(): Observable<IListaGenero> {
-      const url = `${this.apiURL}genre/movie/list${this.key}&language=${this.lingua}`;
+      const url = `${this.apiURL
+      }genre/movie/list${this.key}&language=${this.lingua}`;
   
       return this.http.get<IListaGenero>(url).pipe(
         map(retorno => retorno),

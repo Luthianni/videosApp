@@ -1,6 +1,5 @@
 import { IFilmeApi } from './../models/IFilmeAPI.model';
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import { IFilme } from './../models/IFilme.model';
 import { DadosService } from './../services/dados.service';
 import { Component, OnInit } from '@angular/core';
 
